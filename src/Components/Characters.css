@@ -1,0 +1,104 @@
+
+body {
+    background-color: black; 
+}
+.pagination {
+    display: flex;
+    justify-content: space-between; 
+    margin: 20px 0; 
+}
+
+.pagination button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.pagination button:hover {
+    background-color: #555; 
+}
+
+.title {
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.name {
+    margin-right: 10px;
+    font-size: 25px;
+    color: white;
+}
+
+.details-bttn {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(15, 14, 14);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.modal-content {
+    max-width: 400px;
+    margin: 0 auto;
+    color: antiquewhite;
+}
+
+.films{
+    text-decoration: underline;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #888;
+}
+
+.close-btn:hover {
+    color: #cb0c0c;
+}
