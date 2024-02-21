@@ -1,31 +1,20 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-    background-color: black; 
-}
-.pagination {
-    display: flex;
-    justify-content: space-between; 
-    margin: 20px 0; 
-}
-
-.pagination button {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px; 
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease; 
-}
-
-.pagination button:hover {
-    background-color: #555; 
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
 }
 
 .title {
     text-align: center;
     text-decoration: underline;
-    color: white;
+    margin: 20px 0;
 }
 
 ul {
@@ -37,25 +26,25 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #444;
 }
 
 .name {
-    margin-right: 10px;
-    font-size: 25px;
-    color: white;
+    font-size: 1.2rem;
 }
 
 .details-bttn {
-    padding: 5px 10px;
+    padding: 8px 16px;
     background-color: #007bff;
-    color: white;
+    color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-button:hover {
+.details-bttn:hover {
     background-color: #0056b3;
 }
 
@@ -66,7 +55,7 @@ button:hover {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 999;
+    z-index: 10;
 }
 
 .modal {
@@ -74,20 +63,20 @@ button:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgb(15, 14, 14);
+    background-color: #1c1c1c;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
+    z-index: 20;
 }
 
 .modal-content {
     max-width: 400px;
     margin: 0 auto;
-    color: antiquewhite;
 }
 
-.films{
+.films {
+    margin-top: 10px;
     text-decoration: underline;
 }
 
@@ -101,4 +90,25 @@ button:hover {
 
 .close-btn:hover {
     color: #cb0c0c;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.pagination button {
+    margin: 0 5px;
+    padding: 8px 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+    background-color: #555;
 }
